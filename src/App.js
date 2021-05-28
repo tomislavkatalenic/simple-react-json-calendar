@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import 'antd/dist/antd.css';
+import Kalendar from './components/calendar';
+import React from 'react'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1><img src="favicon.png"></img>Kalendar treninga</h1>
       </header>
+      <Kalendar className='calendar-screen' />
+      <footer>
+        <p>Tomislav Katalenić • 2021</p>
+      </footer>
     </div>
   );
 }

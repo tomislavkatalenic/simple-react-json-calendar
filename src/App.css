@@ -1,38 +1,37 @@
+ul {
+    list-style: none;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+}
+.ant-picker-calendar {
+    width: 95vw;
+    border-top: 2px solid salmon;
+}
+img {
+    height: 50px;
+    padding-right: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    padding: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer {
+    background-color: salmon;
+    width: 100%;
+    text-align: center;
+    padding: 39px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer p {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
 }
