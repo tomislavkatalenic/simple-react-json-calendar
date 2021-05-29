@@ -10,7 +10,6 @@ ul {
 }
 .ant-picker-calendar {
     width: 95vw;
-    border-top: 2px solid salmon;
 }
 img {
     height: 50px;
@@ -34,4 +33,51 @@ footer p {
     color: #fff;
     font-weight: 500;
     font-size: 15px;
+}
+
+.training {
+    width: 100%;
+    text-align: center;
+    height: 81vh;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 2px solid salmon;
+    background-image: url("/src/components/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.training h2 {
+    width: 100%;
+    font-weight: 700;
+    font-size: 70px;
+    padding-top: 80px;
+    margin-bottom: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.training h2:last-of-type {
+    padding-top: 0;
+    margin-top: -25px;
+    margin-bottom: 20px;
+    font-family: "Rubik", sans-serif;
+}
+.training .ant-btn {
+    margin-top: 40px;
+}
+
+.calendar {
+    border-top: 2px solid salmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.calendar .ant-btn {
+    margin: 0 0 35px;
 }

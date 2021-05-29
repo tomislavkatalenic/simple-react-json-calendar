@@ -1,7 +1,8 @@
 import React from 'react';
-import { Calendar, Badge } from "antd";
+import { Calendar, Badge, Button } from "antd";
 import calendar from './calendar.json';
 import moment from 'moment';
+import { useHistory } from 'react-router-dom';
 
 const formattedEntries = () =>
     calendar.calendar[0].event.map((item) => ({
@@ -35,8 +36,16 @@ function dateCellRender(value) {
 }
 
 function Kalendar() {
+    const history = useHistory();
+
+    function handleClick() {
+        history.push(`/`);
+    }
     return (
-        <Calendar dateCellRender={dateCellRender} />
+        <div className="calendar">
+            <Calendar dateCellRender={dateCellRender} />
+            <Button onClick={handleClick}> Vrati se na početnu stranicu</Button>
+        </div>
     )
 }
 
